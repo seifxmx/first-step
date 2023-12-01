@@ -10,13 +10,13 @@ function onSubmit() {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "index.htm");
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.send("username=" + document.getElementById("username").value +
-              "&password=" + document.getElementById("password").value);
+    xhr.send("username=" + document.getElementById("seif").value +
+              "&password=" + document.getElementById("ssss").value);
   
     // إذا نجح تسجيل الدخول، فأعد توجيه المستخدم إلى الصفحة الرئيسية.
     xhr.onload = function() {
       if (xhr.status === 200) {
-        location.href = "index.php";
+        location.href = "index.htm";
       } else {
         alert("حدث خطأ أثناء تسجيل الدخول.");
       }
