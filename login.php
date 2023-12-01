@@ -16,7 +16,7 @@
   // إذا كان المستخدم موجودًا في قاعدة البيانات، فأعد توجيهه إلى الصفحة الرئيسية.
   if (mysqli_num_rows($result) == 1) {
     session_start();
-    $_SESSION['username'] = $seif;
+    $_SESSION['username'] = $username;
     header("Location: index.htm");
   } else {
     echo "اسم المستخدم أو كلمة المرور غير صحيحين.";
